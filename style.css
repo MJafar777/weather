@@ -1,0 +1,135 @@
+:root {
+  --color--primary: #01f2f2;
+  --color--secondary: #0000f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url(weather.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.weather {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  transition: all 1s;
+}
+.input__State {
+  width: 50%;
+  height: 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color--secondary),
+    var(--color--primary)
+  );
+  transition: all 1s;
+  border: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  color: aqua;
+  text-transform: uppercase;
+}
+.input__State::placeholder {
+  color: aqua;
+  text-transform: lowercase;
+}
+.StateBtn {
+  width: 20%;
+  height: 5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 2rem;
+  margin-left: 2rem;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color--primary),
+    var(--color--secondary)
+  );
+  color: aqua;
+}
+.StateBtn:active {
+  transform: scale(1.05);
+}
+.hero {
+  display: inline-block;
+  font-size: 5rem;
+  margin: 0 auto;
+  color: rgb(0, 255, 255);
+  backface-visibility: visible;
+  transition: all 1s;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.input__State:hover,
+.hero:hover {
+  box-shadow: 1px 1.5px 30px aqua;
+}
+
+.heroOne {
+  margin: 2rem auto;
+  display: flex;
+  box-sizing: border-box;
+}
+.card {
+  width: 90%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  margin-top: 3rem auto;
+  text-align: center;
+}
+.card__weather {
+  width: 35rem;
+  background-image: url(card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: blue;
+  margin: 1rem;
+  font-weight: 700;
+}
+.dataCard {
+  margin-top: 2rem;
+}
+.gradusCard {
+  text-align: center;
+  margin-top: 4rem;
+}
+.stateCard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+.videoCard {
+  border-radius: 2rem;
+  margin-top: -3rem;
+  margin-left: 0.5rem;
+}
